@@ -1,0 +1,22 @@
+INSERT INTO finding_rules (id, category, severity, title, cwe_id, recommendation) VALUES
+    ('SEC001', 'SECURITY', 'CRITICAL', 'SQL Injection Vulnerability',          'CWE-89',  'Use parameterized queries or Spring Data JPA'),
+    ('SEC002', 'SECURITY', 'CRITICAL', 'Hardcoded Credentials in Source Code', 'CWE-798', 'Use environment variables or a secrets manager'),
+    ('SEC003', 'SECURITY', 'HIGH',     'XSS — Unescaped Output to Response',   'CWE-79',  'Use Spring MVC @ResponseBody with Jackson'),
+    ('SEC004', 'SECURITY', 'HIGH',     'Insecure Java Deserialization',         'CWE-502', 'Replace Java serialization with JSON/Protobuf'),
+    ('SEC005', 'SECURITY', 'HIGH',     'Sensitive Data Exposure in Log',        'CWE-532', 'Redact sensitive fields before logging'),
+    ('SEC006', 'SECURITY', 'MEDIUM',   'Weak Cryptographic Algorithm',          'CWE-327', 'Use SHA-256+, AES-256-GCM, or BCrypt'),
+    ('SEC007', 'SECURITY', 'MEDIUM',   'Missing Input Validation',              'CWE-20',  'Add @Valid on @RequestBody; use Bean Validation'),
+    ('SEC008', 'SECURITY', 'HIGH',     'Path Traversal Vulnerability',          'CWE-22',  'Canonicalize and validate file paths'),
+    ('TD001',  'TECH_DEBT','HIGH',     'Deprecated API Usage',                  NULL,      'Migrate to the current recommended API'),
+    ('TD002',  'TECH_DEBT','MEDIUM',   'Technical Debt Marker Comment',         NULL,      'Create a ticket and resolve the debt'),
+    ('TD003',  'TECH_DEBT','MEDIUM',   'Overly Broad Exception Handler',        NULL,      'Catch specific exception types'),
+    ('TD004',  'TECH_DEBT','MEDIUM',   'Empty Catch Block',                     NULL,      'Log or handle the exception properly'),
+    ('TD005',  'TECH_DEBT','HIGH',     'Console Print Statement',               NULL,      'Replace with SLF4J logger'),
+    ('TD006',  'TECH_DEBT','LOW',      'Large Method — Consider Refactoring',   NULL,      'Extract methods; aim for < 30 lines per method'),
+    ('QA001',  'CODE_QUALITY','MEDIUM','Null Pointer Dereference Risk',         'CWE-476', 'Use Optional<> or add null checks'),
+    ('QA002',  'CODE_QUALITY','LOW',   'Missing Javadoc on Public API',         NULL,      'Add Javadoc with @param, @return, @throws'),
+    ('QA003',  'CODE_QUALITY','MEDIUM','Exception Swallowed Without Handling',  NULL,      'Log and re-throw or handle properly'),
+    ('QA004',  'CODE_QUALITY','HIGH',  'Thread Safety Issue',                   'CWE-362', 'Use synchronized blocks or java.util.concurrent'),
+    ('DEP001', 'DEPENDENCY','CRITICAL','Known CVE in Dependency',               NULL,      'Upgrade to a patched version immediately'),
+    ('DEP002', 'DEPENDENCY','HIGH',    'Outdated Dependency with Known Vulnerabilities', NULL, 'Run OWASP dependency-check; upgrade dependencies')
+ON CONFLICT (id) DO NOTHING;
