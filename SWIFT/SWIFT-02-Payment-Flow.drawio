@@ -1,0 +1,200 @@
+<mxfile host="app.diagrams.net" version="21.0.0">
+  <diagram id="payment-flow" name="Cross-Border Payment Flow">
+    <mxGraphModel dx="1300" dy="900" grid="0" gridSize="10" guides="1"
+      tooltips="1" connect="0" arrows="1" fold="0" page="1" pageScale="1"
+      pageWidth="1400" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ══ Background ══ -->
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6F8;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1400" height="780" as="geometry" />
+        </mxCell>
+
+        <!-- ══ Title block ══ -->
+        <mxCell id="title_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="1340" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="How a Cross-Border Payment Travels — £27,000  London → Tokyo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="1340" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="SWIFT carries messages — not money. Pre-funded Nostro accounts are debited and credited at each hop." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#E9C46A;" vertex="1" parent="1">
+          <mxGeometry x="30" y="58" width="1340" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ══ LANE BANDS ══ -->
+        <!-- Sender lane -->
+        <mxCell id="lane1_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=none;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="240" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1_lbl" value="SENDER SIDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=8;fontStyle=1;fontColor=#003372;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="30" y="200" width="20" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- SWIFT lane -->
+        <mxCell id="swift_lane_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F0FF;strokeColor=none;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="270" y="100" width="860" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="swift_lane_lbl" value="SWIFT NETWORK — SWIFTNet Private IP  (Encrypted · Authenticated · Monitored)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#0033AA;" vertex="1" parent="1">
+          <mxGeometry x="270" y="100" width="860" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- Receiver lane -->
+        <mxCell id="lane3_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F8F0;strokeColor=none;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="100" width="240" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3_lbl" value="RECEIVER SIDE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=8;fontStyle=1;fontColor=#007A4C;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="200" width="20" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ACTOR: YOU ══ -->
+        <mxCell id="a1" value="&lt;b style=&quot;font-size:13px;&quot;&gt;YOU&lt;/b&gt;&lt;br&gt;London Business&lt;br&gt;&lt;i&gt;Sends £27,000&lt;/i&gt;" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#2C3E50;strokeColor=#2C3E50;fontColor=#FFFFFF;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="55" y="155" width="165" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ACTOR: BARCLAYS ══ -->
+        <mxCell id="a2" value="&lt;b style=&quot;font-size:13px;&quot;&gt;BARCLAYS&lt;/b&gt;&lt;br&gt;London&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;BARCGB22&lt;/font&gt;&lt;br&gt;&lt;i&gt;Ordering Bank&lt;/i&gt;" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;fontColor=#FFFFFF;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="295" y="140" width="175" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ACTOR: JP MORGAN ══ -->
+        <mxCell id="a3" value="&lt;b style=&quot;font-size:13px;&quot;&gt;JP MORGAN&lt;/b&gt;&lt;br&gt;New York&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;CHASUSU33&lt;/font&gt;&lt;br&gt;&lt;i&gt;Correspondent Bank&lt;/i&gt;" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#0070C0;strokeColor=#0070C0;fontColor=#FFFFFF;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="608" y="140" width="185" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ACTOR: MIZUHO ══ -->
+        <mxCell id="a4" value="&lt;b style=&quot;font-size:13px;&quot;&gt;MIZUHO BANK&lt;/b&gt;&lt;br&gt;Tokyo&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;MHCBJPJT&lt;/font&gt;&lt;br&gt;&lt;i&gt;Beneficiary Bank&lt;/i&gt;" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#007A4C;strokeColor=#007A4C;fontColor=#FFFFFF;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="925" y="140" width="175" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ACTOR: SUPPLIER ══ -->
+        <mxCell id="a5" value="&lt;b style=&quot;font-size:13px;&quot;&gt;TOKYO&lt;br&gt;SUPPLIER&lt;/b&gt;&lt;br&gt;&lt;i&gt;Beneficiary&lt;/i&gt;&lt;br&gt;£27,000 received" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#D46A00;strokeColor=#D46A00;fontColor=#FFFFFF;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1155" y="155" width="165" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ══ FORWARD ARROWS ══ -->
+
+        <!-- Arrow 1: You → Barclays -->
+        <mxCell id="ar1" value="&lt;b&gt;① Instruct payment&lt;/b&gt;&lt;br&gt;Online banking / SWIFT instruction" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#2C3E50;strokeWidth=2.5;fillColor=#2C3E50;fontSize=8;labelBackgroundColor=#F4F6F8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="a1" target="a2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 2: Barclays → JP Morgan (MT103) -->
+        <mxCell id="ar2" value="&lt;b&gt;② MT103&lt;/b&gt;&lt;br&gt;Customer Credit Transfer&lt;br&gt;via SWIFTNet" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#003372;strokeWidth=2.5;fillColor=#003372;fontSize=8;labelBackgroundColor=#F4F6F8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="a2" target="a3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 3: JP Morgan → Mizuho (MT103) -->
+        <mxCell id="ar3" value="&lt;b&gt;③ MT103&lt;/b&gt;&lt;br&gt;Onward routing&lt;br&gt;via SWIFTNet" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0070C0;strokeWidth=2.5;fillColor=#0070C0;fontSize=8;labelBackgroundColor=#F4F6F8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="a3" target="a4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow 4: Mizuho → Supplier -->
+        <mxCell id="ar4" value="&lt;b&gt;④ Credit account&lt;/b&gt;&lt;br&gt;Convert to JPY&lt;br&gt;Deposit funds" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#007A4C;strokeWidth=2.5;fillColor=#007A4C;fontSize=8;labelBackgroundColor=#F4F6F8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="a4" target="a5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ══ RETURN ARROW — MT940 Statement ══ -->
+        <mxCell id="ar5" value="⑤  MT940 / CAMT.053  End-of-Day Account Statement (reconciliation)" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#008B8B;strokeWidth=2;fillColor=#008B8B;fontSize=8.5;fontStyle=1;labelBackgroundColor=#F4F6F8;dashed=1;exitX=0;exitY=0.85;exitDx=0;exitDy=0;entryX=1;entryY=0.85;entryDx=0;entryDy=0;" edge="1" source="a4" target="a2" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="260" />
+              <mxPoint x="470" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ══ NOSTRO ACCOUNT BOXES ══ -->
+        <mxCell id="nostro1_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#F0A000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nostro1" value="&lt;b&gt;Nostro Account&lt;/b&gt;&lt;br&gt;Barclays holds a USD account&lt;br&gt;at JP Morgan (pre-funded)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="350" y="310" width="230" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="nostro2_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#F0A000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="660" y="310" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nostro2" value="&lt;b&gt;Nostro Account&lt;/b&gt;&lt;br&gt;JP Morgan holds a JPY account&lt;br&gt;at Mizuho (pre-funded)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="660" y="310" width="230" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Connector lines to nostro boxes -->
+        <mxCell id="nc1" value="debit" style="edgeStyle=none;html=1;strokeColor=#F0A000;strokeWidth=1.5;dashed=1;fontSize=8;fontColor=#D46A00;" edge="1" source="a2" target="nostro1_bg" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nc2" value="debit" style="edgeStyle=none;html=1;strokeColor=#F0A000;strokeWidth=1.5;dashed=1;fontSize=8;fontColor=#D46A00;" edge="1" source="a3" target="nostro2_bg" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ══ KEY INSIGHT BOX ══ -->
+        <mxCell id="insight_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="30" y="460" width="1340" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="insight_icon" value="KEY INSIGHT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#E9C46A;" vertex="1" parent="1">
+          <mxGeometry x="30" y="460" width="120" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="insight_text" value="No money physically crosses any border. SWIFT messages instruct banks to debit and credit Nostro/Vostro accounts they already hold at each other. The £27,000 is re-assigned, not transported." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="155" y="460" width="1200" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- ══ LEGEND ══ -->
+        <mxCell id="leg_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="30" y="530" width="1340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="50" y="530" width="80" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Legend items -->
+        <mxCell id="leg1_line" value="" style="edgeStyle=none;html=1;strokeColor=#003372;strokeWidth=2.5;fillColor=#003372;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="140" y="560" as="sourcePoint"/><mxPoint x="220" y="560" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="leg1_lbl" value="MT103  (SWIFT FIN message — forward payment)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="225" y="535" width="340" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg2_line" value="" style="edgeStyle=none;html=1;strokeColor=#008B8B;strokeWidth=2;fillColor=#008B8B;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="600" y="560" as="sourcePoint"/><mxPoint x="680" y="560" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="leg2_lbl" value="MT940 / CAMT.053  (end-of-day account statement — return)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="685" y="535" width="380" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg3_box" value="" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#F0A000;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="545" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3_lbl" value="Nostro / Vostro Account" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="535" width="220" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ══ TIMELINE STRIP ══ -->
+        <mxCell id="tl_title" value="Typical Timeline:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontStyle=1;fontColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="30" y="608" width="140" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="tl1" value="T+0  Instruction sent" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#2C3E50;strokeColor=#2C3E50;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="175" y="605" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tl2" value="T+0  MT103 hits correspondent" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="380" y="605" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tl3" value="T+0–1  FX conversion + routing" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#0070C0;strokeColor=#0070C0;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="606" y="605" width="210" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tl4" value="T+1–3  Account credited in Tokyo" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#007A4C;strokeColor=#007A4C;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="832" y="605" width="220" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="tl5" value="T+1  MT940 statement reconciles" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#008B8B;strokeColor=#008B8B;fontColor=#FFFFFF;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1068" y="605" width="220" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ══ Footer ══ -->
+        <mxCell id="footer" value="Financial Systems Knowledge Series  ·  SWIFT Security Officer  ·  April 2026  ·  Open in draw.io to edit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=8;fontStyle=2;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="0" y="750" width="1400" height="24" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python generate_swift_intro.py)",
+      "Bash(python generate_swift_article.py)",
+      "Bash(ls -lh \"c:/Subash/Learning/claude/project/Research/SWIFT/\"*.docx \"c:/Subash/Learning/claude/project/Research/SWIFT/\"*.drawio)"
+    ]
+  }
+}

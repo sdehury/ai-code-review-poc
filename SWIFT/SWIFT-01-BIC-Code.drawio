@@ -1,0 +1,120 @@
+<mxfile host="app.diagrams.net" version="21.0.0">
+  <diagram id="bic-code" name="SWIFT BIC Code Anatomy">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1"
+      tooltips="1" connect="0" arrows="0" fold="0" page="1" pageScale="1"
+      pageWidth="1169" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ── Background ── -->
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6F8;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1169" height="400" as="geometry" />
+        </mxCell>
+
+        <!-- ── Title ── -->
+        <mxCell id="title" value="SWIFT BIC Code Anatomy" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="0" y="18" width="1169" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="sub" value="Every bank on the SWIFT network is identified by a unique BIC (Bank Identifier Code), also called a SWIFT Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="0" y="54" width="1169" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- ══ SEGMENT 1 — Institution Code ══ -->
+        <mxCell id="s1_box" value="ABCD" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;fontColor=#FFFFFF;fontSize=36;fontStyle=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_label" value="Institution Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_chars" value="4 characters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="80" y="244" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1_desc" value="Uniquely identifies the&lt;br&gt;financial institution" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="80" y="264" width="220" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ARROW 1→2 ══ -->
+        <mxCell id="arr1" value="" style="edgeStyle=none;html=1;strokeColor=#003372;strokeWidth=2;fillColor=#003372;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s1_box" target="s2_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ══ SEGMENT 2 — Country Code ══ -->
+        <mxCell id="s2_box" value="GB" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#007A4C;strokeColor=#007A4C;fontColor=#FFFFFF;fontSize=36;fontStyle=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_label" value="Country Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#007A4C;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_chars" value="2 characters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="370" y="244" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_desc" value="ISO 3166-1 alpha-2&lt;br&gt;country code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="370" y="264" width="180" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ARROW 2→3 ══ -->
+        <mxCell id="arr2" value="" style="edgeStyle=none;html=1;strokeColor=#007A4C;strokeWidth=2;fillColor=#007A4C;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s2_box" target="s3_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ══ SEGMENT 3 — Location Code ══ -->
+        <mxCell id="s3_box" value="2L" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#008B8B;strokeColor=#008B8B;fontColor=#FFFFFF;fontSize=36;fontStyle=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="618" y="100" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_label" value="Location Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#008B8B;" vertex="1" parent="1">
+          <mxGeometry x="618" y="220" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_chars" value="2 characters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="618" y="244" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_desc" value="City or regional&lt;br&gt;identifier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="618" y="264" width="180" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ══ ARROW 3→4 ══ -->
+        <mxCell id="arr3" value="" style="edgeStyle=none;html=1;strokeColor=#008B8B;strokeWidth=2;fillColor=#008B8B;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="s3_box" target="s4_box" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ══ SEGMENT 4 — Branch Code ══ -->
+        <mxCell id="s4_box" value="XXX" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#D46A00;strokeColor=#D46A00;fontColor=#FFFFFF;fontSize=36;fontStyle=1;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="866" y="100" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_label" value="Branch Code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#D46A00;" vertex="1" parent="1">
+          <mxGeometry x="866" y="220" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_chars" value="3 characters  (optional)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="866" y="244" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s4_desc" value="Specific branch or dept.&lt;br&gt;XXX or omitted = Head Office" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="866" y="264" width="220" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ══ Example footer ══ -->
+        <mxCell id="eg_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#003372;strokeColor=#003372;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="1006" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_label" value="Example:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#E9C46A;" vertex="1" parent="1">
+          <mxGeometry x="100" y="310" width="80" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_abcd" value="BARC" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#FFFFFF;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="180" y="310" width="100" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_gb" value="GB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#A8EDCC;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="340" y="310" width="80" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_22" value="22" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#A8E6E6;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="490" y="310" width="80" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_xxx" value="XXX" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#FFCC80;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="650" y="310" width="100" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="eg_meaning" value="=  Barclays Bank  ·  Great Britain  ·  London  ·  Head Office" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontStyle=2;fontColor=#E9C46A;" vertex="1" parent="1">
+          <mxGeometry x="800" y="310" width="460" height="52" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
